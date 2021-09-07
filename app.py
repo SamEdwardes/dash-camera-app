@@ -4,6 +4,8 @@ from dash.dependencies import Input, Output
 
 app = dash.Dash(__name__)
 
+server = app.server
+
 app.layout = html.Div([
     dcc.Upload(id='upload', children=html.Button('Upload an image')),
     html.Img(id='image', width=500)
