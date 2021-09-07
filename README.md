@@ -21,3 +21,11 @@ poetry install
 ```bash
 python app.py
 ```
+
+## Developer Notes
+
+*Note* use the following command to create requirements.txt with poetry:
+
+```bash
+poetry export --without-hashes --output requirements.txt
+```
